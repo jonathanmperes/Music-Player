@@ -58,11 +58,11 @@
 			children = (
 				70D7D77629AFDF3B007C25F2 /* AppDelegate.swift */,
 				70D7D77829AFDF3B007C25F2 /* SceneDelegate.swift */,
+				70D7D78A29AFE0DA007C25F2 /* GenreButtonScreen.swift */,
 				70D7D77C29AFDF3B007C25F2 /* Main.storyboard */,
 				70D7D77F29AFDF3D007C25F2 /* Assets.xcassets */,
 				70D7D78129AFDF3D007C25F2 /* LaunchScreen.storyboard */,
 				70D7D78429AFDF3D007C25F2 /* Info.plist */,
-				70D7D78A29AFE0DA007C25F2 /* GenreButtonScreen.swift */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
