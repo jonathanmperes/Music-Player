@@ -30,4 +30,17 @@ class GenreButtonScreen: UIViewController {
         
     }
     
+    func playGenre(genre: String) {
+        
+        musicPlayer.stop()
+        
+        let query = MPMediaQuery()
+        let predicate = MPMediaPropertyPredicate(value: genre, forProperty: MPMediaItemPropertyGenre)
+        
+        query.addFilterPredicate(predicate)
+        
+        musicPlayer.setQueue(with: query)
+        musicPlayer.shuffleMode = .songs
+        musicPlayer.play()
+    }
 }
