@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import MediaPlayer
 
 class GenreButtonScreen: UIViewController {
+    
+    var musicPlayer = MPMusicPlayerController.applicationMusicPlayer
 
     override func viewDidLoad() {
         super.viewDidLoad()
