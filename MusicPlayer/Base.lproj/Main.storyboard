@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PLAY YOUR JAM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rE2-2u-64G">
-                                <rect key="frame" x="85.666666666666671" y="200" width="221.66666666666663" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <rect key="frame" x="79.666666666666671" y="200" width="233.66666666666663" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -37,6 +37,9 @@
                                         <state key="normal" title="Blues">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3xs-fc-aCE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkd-9C-GBR">
                                         <rect key="frame" x="0.0" y="100" width="280" height="60"/>
@@ -49,6 +52,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Jazz">
                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CuC-es-mgI"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b1U-ZO-vMl">
                                         <rect key="frame" x="0.0" y="200" width="280" height="60"/>
@@ -61,6 +67,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="Rock">
                                             <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="genreButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ppq-WC-idj"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -73,7 +82,7 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="Twi-1B-hOe"/>
-                                    <constraint firstAttribute="width" constant="130" id="rq7-7h-Hlc"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="rq7-7h-Hlc"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -85,7 +94,7 @@
                                 <rect key="frame" x="206.66666666666663" y="569" width="130" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="GDf-rC-6gr"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="130" id="GDf-rC-6gr"/>
                                     <constraint firstAttribute="height" constant="60" id="hEo-ns-xZt"/>
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -104,6 +113,7 @@
                             <constraint firstItem="VaM-5U-1Np" firstAttribute="top" secondItem="NOd-cj-N8d" secondAttribute="bottom" constant="43" id="SGX-tO-5gn"/>
                             <constraint firstItem="NOd-cj-N8d" firstAttribute="top" secondItem="rE2-2u-64G" secondAttribute="bottom" constant="30" id="Vv5-2a-EcZ"/>
                             <constraint firstItem="q5G-Bx-Krn" firstAttribute="centerY" secondItem="VaM-5U-1Np" secondAttribute="centerY" id="XsZ-kZ-bhC"/>
+                            <constraint firstItem="q5G-Bx-Krn" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="VaM-5U-1Np" secondAttribute="trailing" constant="8" symbolic="YES" id="epe-w3-YlL"/>
                             <constraint firstItem="NOd-cj-N8d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gb6-Na-fK1"/>
                             <constraint firstItem="NOd-cj-N8d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="mGg-df-Snm"/>
                         </constraints>
