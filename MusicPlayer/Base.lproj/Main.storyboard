@@ -106,7 +106,7 @@
                                     <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PB8-ZF-XRW"/>
+                                    <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hZ2-qc-CEY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -124,6 +124,13 @@
                             <constraint firstItem="NOd-cj-N8d" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-30" id="mGg-df-Snm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="musicPlayerButtons" destination="9mz-Hg-GLX" collectionClass="NSMutableArray" id="Vcv-yQ-sec"/>
+                        <outletCollection property="musicPlayerButtons" destination="dkd-9C-GBR" collectionClass="NSMutableArray" id="t3j-u1-7wi"/>
+                        <outletCollection property="musicPlayerButtons" destination="b1U-ZO-vMl" collectionClass="NSMutableArray" id="vxo-a4-lEb"/>
+                        <outletCollection property="musicPlayerButtons" destination="VaM-5U-1Np" collectionClass="NSMutableArray" id="rKn-Zk-KG2"/>
+                        <outletCollection property="musicPlayerButtons" destination="q5G-Bx-Krn" collectionClass="NSMutableArray" id="F4I-JW-ug1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
