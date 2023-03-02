@@ -18,4 +18,13 @@ class GenreButtonScreen: UIViewController {
         
     }
     
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    
+    @IBAction func nextButtonTapped(_ sender: UIButton) {
+        
+    }
+    
 }
