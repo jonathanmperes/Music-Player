@@ -41,7 +41,9 @@ class GenreButtonScreen: UIViewController {
         musicPlayer.stop()
 
         let query = MPMediaQuery()
-        let predicate = MPMediaPropertyPredicate(value: genre, forProperty: MPMediaItemPropertyGenre)
+        let predicate = MPMediaPropertyPredicate(
+            value: genre, forProperty: MPMediaItemPropertyGenre
+        )
 
         query.addFilterPredicate(predicate)
 
